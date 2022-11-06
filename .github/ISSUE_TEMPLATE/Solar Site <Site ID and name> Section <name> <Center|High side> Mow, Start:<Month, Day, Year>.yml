@@ -1,6 +1,6 @@
 name: Solar Site Mow Tracking
 description: Fill out the form for solar section specific service planning.
-title: "Solar Site <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year> "
+title: "Solar Site <Site ID and name> Section <name> <Center or High side> Mow, Start:<Month, Day, Year> "
 labels: ["mow", "trim", "low side", "high side"]
 assignees:
   - Aweesam
@@ -9,35 +9,28 @@ body:
     id: umm
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out this buisness planning issue!
   - type: input
-    id: contact
+    id: site-details
     attributes:
-      label: Task Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Site Details
+      description: Type the name of the Solar Site
+      placeholder: ex. NEE Interstate
     validations:
       required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
+      
   - type: dropdown
     id: section
     attributes:
       label: Section
-      description: What what section of the site is being adressed?
+      description: What section of the site is being addressed?
       options:
         - North
         - Central
         - South
     validations:
       required: true
+      
   - type: dropdown
     id: side
     attributes:
@@ -53,6 +46,7 @@ body:
       label: Action Plan
       description: Please briefly explain the mow stategy and goal regarding this mow.
       render: shell
+      
   - type: markdown
     id: code-of-conduct
     attributes:
@@ -62,6 +56,7 @@ body:
        Discuss and organize remote vs. in-person scheduling and mow duties.
        Verify robot state of charge EOD.
        Post a daily screenshot of telemetry data in the comments below.
+       
   - type: checkboxes
     id: terms
     attributes:
