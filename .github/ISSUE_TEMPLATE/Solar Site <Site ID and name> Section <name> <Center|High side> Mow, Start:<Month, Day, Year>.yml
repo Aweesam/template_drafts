@@ -48,7 +48,7 @@ body:
         - High side
         
   - type: textarea
-    id: plan description
+    id: plan_description
     attributes:
       label: Action Plan
       description: Please briefly explain the mow stategy and goal regarding this mow.
