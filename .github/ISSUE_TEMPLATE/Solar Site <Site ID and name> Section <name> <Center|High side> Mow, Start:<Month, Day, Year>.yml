@@ -1,9 +1,7 @@
 name:  <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year>
-description: Fill out the form for solar section specific service planning.
-title: "[Solar Site <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year>]:"
-labels: ["mow", "trim", "low side", "high side"]
-assignees:
-  - Aweesam
+description: Fill out the form for solar section-specific business service planning.
+title: " Solar Site Tracking Issue"
+labels: ["solar site tracking"]
 body:
   - type: markdown
     id: umm
