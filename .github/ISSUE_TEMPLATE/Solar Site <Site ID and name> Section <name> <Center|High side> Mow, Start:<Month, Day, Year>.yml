@@ -1,10 +1,10 @@
-name:  Solar Site Tracking
-description: Fill out the form for solar section-specific business service planning.
-
+name:  Solar Site Tracking Template Form
+description: Fill out this form to create a section-specific solar site business service plan.
+title: [Solar Site] <Site ID, Section, Mow-side, and Start Date>
 
 body:
   - type: markdown
-    id: umm
+    id: greeting
     attributes:
       value: |
         Thanks for taking the time to fill out this buisness planning issue!
@@ -13,10 +13,11 @@ body:
     id: site-details
     attributes:
       label: Site Details
-      description: Type the name of the Solar Site
+      description: Type the name/ID of the Solar Site
       placeholder: ex. NEE Interstate
     validations:
       required: false
+      
   - type: input
     id: start-date
     attributes:
@@ -25,6 +26,7 @@ body:
       placeholder: ex. Day, Month, Year
     validations:
       required: false
+      
   - type: input
     id: end-date
     attributes:
