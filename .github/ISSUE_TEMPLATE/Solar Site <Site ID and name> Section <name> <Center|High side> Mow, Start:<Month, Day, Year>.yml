@@ -1,6 +1,6 @@
 name:  Solar Site Tracking Template Form
 description: Fill out this form to create a section-specific solar site business service plan.
-title: "[Solar Site] <Site ID, Section, Mow-side, and Start Date>"
+title: "Solar Site <Site ID>, Section <section>, <high side or center> Mow, <start date>"
 
 body:
   - type: markdown
