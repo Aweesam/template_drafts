@@ -18,8 +18,8 @@ body:
       placeholder: ex. NEE Interstate
     validations:
       required: false
-      
-  - type: dropdown
+   
+   - type: dropdown
     id: section
     attributes:
       label: Section
@@ -31,7 +31,7 @@ body:
     validations:
       required: true
       
-  - type: dropdown
+   - type: dropdown
     id: side
     attributes:
       label: Mow Line
@@ -39,7 +39,39 @@ body:
       options:
         - Center line
         - High side
-        
+    
+   - type: checkboxes
+    id: readiness
+    attributes:
+      label: Fleet Readiness
+      description: Confirm mechanical inspection and site organization before section-level mow.
+      options:
+        - label: Full inspection issues created for each LCR
+        - label: LCR inspection issues complete.
+          required: false
+          
+  - type: checkboxes
+    id: mowing
+    attributes:
+      label: Mowing
+      description: Confirm complete of mow related goals.
+      options:
+        - label: Rows complete.
+        - label: Fence-line complete
+        - label: Service and access roads complete.
+        - label: Inverter open block area complete.
+          required: false 
+          
+  - type: checkboxes
+    id: trimming
+    attributes:
+      label: Trimmming
+      description: Confirm complete of trimmer related goals.
+      options:
+        - label: Trimming of risers and collector boxes complete.
+        - label: Trimming around inverters complete.
+          required: false 
+              
   - type: textarea
     id: plan_description
     attributes:
