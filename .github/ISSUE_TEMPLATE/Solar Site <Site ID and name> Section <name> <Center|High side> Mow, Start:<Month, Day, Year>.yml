@@ -1,9 +1,9 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: Solar Site Mow Tracking
+description: Fill out the form for solar section specific service planning.
+title: "Solar Site <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year> "
+labels: ["mow", "trim", "low-side", "high-side"]
 assignees:
-  - octocat
+  - Aweesam
 body:
   - type: markdown
     attributes:
@@ -12,7 +12,7 @@ body:
   - type: input
     id: contact
     attributes:
-      label: Contact Details
+      label: Task Details
       description: How can we get in touch with you if we need more info?
       placeholder: ex. email@example.com
     validations:
@@ -27,36 +27,43 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: section
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Section
+      description: What what section of the site is being adressed?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - North
+        - Central
+        - South
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: side
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Mow Line
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Center line
+        - High side
+        
   - type: textarea
-    id: logs
+    id: plan description
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Action Plan
+      description: Please briefly explain the mow stategy and goal regarding this mow.
       render: shell
+  - type: markdown
+    value: |
+      - Everyday the operators must:
+      - Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
+      - Discuss and organize remote vs. in-person scheduling and mow duties.
+      - Verify robot state of charge EOD.
+      - Post a daily screenshot of telemetry data in the comments below.
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      label: Operator Code of Conduct
+      description: By submitting this issue, you agree to follow our Operator Code of Conduct.
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree to follow the operator code of conduct.
           required: true
