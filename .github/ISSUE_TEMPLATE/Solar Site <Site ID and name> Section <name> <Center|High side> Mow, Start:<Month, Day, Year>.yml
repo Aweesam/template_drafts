@@ -50,6 +50,7 @@ body:
   - type: markdown
     id: code-of-conduct
     attributes:
+      label: Operator Code of Conduct
       value: |
        Everyday the operators must:
        Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
@@ -60,13 +61,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Operator Code of Conduct
-      value: |
-       Everyday the operators must:
-       Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
-       Discuss and organize remote vs. in-person scheduling and mow duties.
-       Verify robot state of charge EOD.
-       Post a daily screenshot of telemetry data in the comments below.
+      label: Operator Code of Conduct Agreement
       description: By submitting this issue, you agree to follow our Operator Code of Conduct.
       options:
         - label: I agree to follow the operator code of conduct.
