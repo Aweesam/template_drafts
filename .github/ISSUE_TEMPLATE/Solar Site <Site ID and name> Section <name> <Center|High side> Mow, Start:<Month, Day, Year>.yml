@@ -1,6 +1,6 @@
 name:  <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year>
 description: Fill out the form for solar section specific service planning.
-title: "Solar Site <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year>"
+title: "[Solar Site <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year>]:"
 labels: ["mow", "trim", "low side", "high side"]
 assignees:
   - Aweesam
@@ -51,7 +51,7 @@ body:
     id: code-of-conduct
     attributes:
       value: |
-       Everyday the operators must:
+       ## Everyday the operators must:
        Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
        Discuss and organize remote vs. in-person scheduling and mow duties.
        Verify robot state of charge EOD.
