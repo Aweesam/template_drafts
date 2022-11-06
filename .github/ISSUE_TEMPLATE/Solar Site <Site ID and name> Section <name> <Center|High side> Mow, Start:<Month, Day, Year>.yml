@@ -1,6 +1,6 @@
 name: Solar Site Mow Tracking
 description: Fill out the form for solar section specific service planning.
-title: "Solar Site <Site ID and name> Section <name> <Center or High side> Mow, Start:<Month, Day, Year> "
+title: "Solar Site "
 labels: ["mow", "trim", "low side", "high side"]
 assignees:
   - Aweesam
