@@ -10,6 +10,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this buisness planning issue!
+        
   - type: input
     id: site-details
     attributes:
@@ -19,7 +20,7 @@ body:
     validations:
       required: false
    
-   - type: dropdown
+  - type: dropdown
     id: section
     attributes:
       label: Section
@@ -31,7 +32,7 @@ body:
     validations:
       required: true
       
-   - type: dropdown
+  - type: dropdown
     id: side
     attributes:
       label: Mow Line
@@ -40,7 +41,7 @@ body:
         - Center line
         - High side
     
-   - type: checkboxes
+  - type: checkboxes
     id: readiness
     attributes:
       label: Fleet Readiness
