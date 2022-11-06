@@ -54,7 +54,9 @@ body:
       description: Please briefly explain the mow stategy and goal regarding this mow.
       render: shell
   - type: markdown
-    value: |
+    id: code-of-conduct
+    attributes:
+      value: |
        Everyday the operators must:
        Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
        Discuss and organize remote vs. in-person scheduling and mow duties.
