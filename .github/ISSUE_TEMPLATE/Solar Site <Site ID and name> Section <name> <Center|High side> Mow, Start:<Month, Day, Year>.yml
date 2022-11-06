@@ -50,6 +50,7 @@ body:
   - type: markdown
     id: code-of-conduct
     attributes:
+      title: Operator Code of Conduct
       value: |
        Everyday the operators must:
        Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
