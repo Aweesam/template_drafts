@@ -17,7 +17,7 @@ body:
       placeholder: ex. NEE Interstate
     validations:
       required: false
-   - type: input
+  - type: input
     id: start-date
     attributes:
       label: Start Date
@@ -25,7 +25,7 @@ body:
       placeholder: ex. Day, Month, Year
     validations:
       required: false
-    - type: input
+  - type: input
     id: end-date
     attributes:
       label: Start Date
