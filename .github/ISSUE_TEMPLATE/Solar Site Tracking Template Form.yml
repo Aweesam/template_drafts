@@ -56,7 +56,7 @@ body:
       options:
         - Center line
         - High side
-     validations:
+    validations:
       required: true
     
   - type: checkboxes
