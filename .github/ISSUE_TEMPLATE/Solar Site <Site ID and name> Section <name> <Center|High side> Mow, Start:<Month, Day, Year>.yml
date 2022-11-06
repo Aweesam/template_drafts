@@ -55,11 +55,11 @@ body:
       render: shell
   - type: markdown
     value: |
-      - Everyday the operators must:
-      - Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
-      - Discuss and organize remote vs. in-person scheduling and mow duties.
-      - Verify robot state of charge EOD.
-      - Post a daily screenshot of telemetry data in the comments below.
+       Everyday the operators must:
+       Check robot mower cabling and reductions to confirm that an LCR is clear for mowing.
+       Discuss and organize remote vs. in-person scheduling and mow duties.
+       Verify robot state of charge EOD.
+       Post a daily screenshot of telemetry data in the comments below.
   - type: checkboxes
     id: terms
     attributes:
