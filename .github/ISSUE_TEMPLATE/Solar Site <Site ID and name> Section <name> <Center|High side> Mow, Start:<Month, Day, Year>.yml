@@ -1,4 +1,4 @@
-name:  <Site ID and name> Section <name> <Center|High side> Mow, Start:<Month, Day, Year>
+name:  Solar Site Tracking
 description: Fill out the form for solar section-specific business service planning.
 
 
@@ -17,7 +17,23 @@ body:
       placeholder: ex. NEE Interstate
     validations:
       required: false
-   
+   - type: input
+    id: start-date
+    attributes:
+      label: Start Date
+      description: The date that this mow began.
+      placeholder: ex. Day, Month, Year
+    validations:
+      required: false
+    - type: input
+    id: end-date
+    attributes:
+      label: Start Date
+      description: The date that this mow finished.
+      placeholder: ex. Day, Month, Year
+    validations:
+      required: false  
+      
   - type: dropdown
     id: section
     attributes:
